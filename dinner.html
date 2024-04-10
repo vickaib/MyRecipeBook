@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Recipe Book · IT331</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My RecipeBook</h1>      
+    <p>Have a look around!</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">RecipeBook</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="allrecipes.html"><span class="glyphicon glyphicon-search"></span> Search Recipes</a></li>
+        <li><a href="feedback.html"><span class="glyphicon glyphicon-pencil"></span> Feedback Form</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title and subtitle container -->
+<div class="container text-center">
+  <h1><b>What's for Dinner?</b></h1>
+  <p>Some recipes to accompany you at the end of your day.</p>
+</div>
+  
+
+<!-- Main content container -->
+<div class="container">  
+  
+  <div class="row">
+    <!-- Title of food -->
+    <div class="container">
+      <h3><b>Salmon Steak Dinner</b></h3>
+    </div>
+    <!-- Image panel -->
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body"><img src="https://stocksnap.io/photo/G8QICMKLUV/editor" class="img-responsive" style="width:100%" alt="Salmon Steak Dinner"></div>
+        <div class="panel-footer">Source: <a href="https://stocksnap.io/photo/G8QICMKLUV/editor">https://stocksnap.io/photo/G8QICMKLUV/editor</a></div>
+      </div>
+    </div>
+    <!-- Food description -->
+    <div class="col-sm-8"> 
+      <div class="panel panel-default">
+        <div class="recipe-content">
+          <p><b>Salmon Steak Dinner.</b> Sometimes we need a break from meat. Salmon is a great source of omega-3s and is a great way to end the day.</p>
+          
+          <p>Ingredients: </p>
+          <ul>
+            <li>Salmon Steak</li>
+            <li>Lemon</li>
+            <li>Seasonings of your choice</li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr />
+  
+  <div class="row">
+    <!-- Title of food -->
+    <div class="container">
+      <h3><b>Classic Pork Ribs and Salad</b></h3>
+    </div>
+    <!-- Image panel -->
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body"><img src="https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_1280.jpg" class="img-responsive" style="width:100%" alt="Classic Pork Ribs and Salad"></div>
+        <div class="panel-footer">Source: <a href="https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_1280.jpg">https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_1280.jpg</a></div>
+      </div>
+    </div>
+    <!-- Food description -->
+    <div class="col-sm-8"> 
+      <div class="panel panel-default">
+        <div class="recipe-content">
+          <p><b>Classic Pork Ribs and Salad</b> is a perfect ending to your day. Tender, savory, all paired with refreshing mixed veggies is sure to make you happy.</p>
+          
+          <p>Ingredients: </p>
+          <ul>
+            <li>Pork Ribs</li>
+            <li>Salt and pepper</li>
+            <li>BBQ Sauce (optional)</li>
+            <li>Cherry Tomatoes</li>
+            <li>Cucumbers</li>
+            <li>Lettuce</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<br />
+
+<footer class="container-fluid text-center">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+  <p><b>CSS Stylesheet:</b><a href="https://mason.gmu.edu/~vkaibiga/IT331/styles.css" style="color: steelblue"> https://mason.gmu.edu/~vkaibiga/IT331/styles.css</a></p>
+  <p><b>Last Modified Date:</b></p>
+  <p id="lastModifiedDate"></p>
+  <script>
+    // Get last modified date
+    const date = new Date(document.lastModified);
+    document.getElementById("lastModifiedDate").innerHTML = date;
+  </script> 
+</footer>
+
+
+</body>
+</html>

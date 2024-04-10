@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Recipe Book · IT331</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My RecipeBook</h1>      
+    <p>Have a look around!</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">RecipeBook</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="allrecipes.html"><span class="glyphicon glyphicon-search"></span> Search Recipes</a></li>
+        <li><a href="feedback.html"><span class="glyphicon glyphicon-pencil"></span> Feedback Form</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title and subtitle container -->
+<div class="container text-center">
+  <h1><b>What's for Dessert?</b></h1>
+  <p>We all need a little something sweet.</p>
+</div>
+  
+
+<!-- Main content container -->
+<div class="container">  
+  
+  <div class="row">
+    <!-- Title of food -->
+    <div class="container">
+      <h3><b>Raspberry Pistachio Macarons</b></h3>
+    </div>
+    <!-- Image panel -->
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/upwk61660738-wikimedia-image.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=e5923c1bd5c439b344313e1e77b0d17d" style="width:100%" alt="Raspberry Pistachio Macarons"></div>
+         <div class="panel-footer">Source: <a href="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/upwk61660738-wikimedia-image.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=e5923c1bd5c439b344313e1e77b0d17d">Raspberry Pistachio Macaron Photo</a></div>
+      </div>
+    </div>
+    <!-- Food description -->
+    <div class="col-sm-8"> 
+      <div class="panel panel-default">
+        <div class="recipe-content">
+          <p><b>Raspberry Pistachio Macarons</b> are a delicious, fruity, nutty light dessert that's perfect for the end of the day, or if you're craving something a little sweet. It's a lot of work to make them, but they're definitely worth the effort.</p>
+          
+          <p>Ingredients: </p>
+          <ul>
+            <li>Almond flour</li>
+            <li>Powdered sugar</li>
+            <li>Egg whites</li>
+            <li>Butter</li>
+            <li>Heavy cream</li>
+            <li>Pistachios</li>
+            <li>Raspberries</li>
+          </ul>  
+          <p>Note: One of my favorite pages that consists mainly of macarons is <a href="https://www.piesandtacos.com/category/macarons/">Pies and Tacos</a>. If you'd like to learn more, definitely check it out!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr />
+  
+</div>
+  
+<br />
+
+<footer class="container-fluid text-center">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+  <p><b>CSS Stylesheet:</b><a href="https://mason.gmu.edu/~vkaibiga/IT331/styles.css" style="color: steelblue"> https://mason.gmu.edu/~vkaibiga/IT331/styles.css</a></p>
+  <p><b>Last Modified Date:</b></p>
+  <p id="lastModifiedDate"></p>
+  <script>
+    // Get last modified date
+    const date = new Date(document.lastModified);
+    document.getElementById("lastModifiedDate").innerHTML = date;
+  </script> 
+</footer>
+
+
+</body>
+</html>

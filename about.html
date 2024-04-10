@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Recipe Book · IT331</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+  
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My RecipeBook</h1>      
+    <p>Have a look around!</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">RecipeBook</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="allrecipes.html"><span class="glyphicon glyphicon-search"></span> Search Recipes</a></li>
+        <li><a href="feedback.html"><span class="glyphicon glyphicon-pencil"></span> Feedback Form</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title and subtitle container -->
+<div class="container text-center">
+  <h1><b>About Me</b></h1>
+    <div class="panel panel-default">
+      <div class="recipe-content">
+        <br />
+        <h4><u>Introduction</u></h4>
+        <p id="welcome"></p>
+        <p>My name is <b>Victoria Kaibigan</b>, and I am a senior at George Mason University, majoring in Information Technology with a concentration in Web Development. I love to create websites that deliver aspects of myself, just like this one. I wanted to create a site where I could share not only my culture, but the every day foods that I enjoy the most. I hope you enjoy!</p>
+        
+        <hr />
+        
+        <h4><u>Coding in Style</u></h4>
+        <p>If you would like to see what I did to format and stylize this website, you can find the stylesheet through this link: <a href="https://mason.gmu.edu/~vkaibiga/IT331/styles.css">https://mason.gmu.edu/~vkaibiga/IT331/styles.css</a></p>
+        
+        <hr />
+          
+        <h4><u>Follow my Socials!</u></h4>
+        <p><a href="https://twitter.com/GordonRamsay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/vkaibiga/" class="fa fa-linkedin"></a></p>
+      </div>
+      
+      <script>
+        let name = prompt("Please enter your name. ");
+        var visitor = +localStorage.getItem("visitor");
+        
+        if (visitor == null) {
+          document.getElementById("welcome").innerHTML = "Hello there, " + name + "!";
+        }
+        
+        if (visitor != null) {
+          document.getElementById("welcome").innerHTML = "Welcome back, " + name + "!";
+        }
+        
+      </script>
+  
+      
+    </div>
+</div>
+  
+
+<!-- Main content container -->
+<div class="container">  
+  
+  <div class="row">
+    <div class="container">
+      <p><a href="mailto:vkaibiga@gmu.edu"><button class="button">Contact Me</button></a> <a href="feedback.html"><button class="button">Write Feedback</button></a></p>
+    </div>
+     
+  </div>
+
+  
+</div>
+  
+<br />
+
+<footer class="container-fluid text-center">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+  <p><b>CSS Stylesheet:</b><a href="https://mason.gmu.edu/~vkaibiga/IT331/styles.css" style="color: steelblue"> https://mason.gmu.edu/~vkaibiga/IT331/styles.css</a></p>
+  <p><b>Last Modified Date:</b></p>
+  <p id="lastModifiedDate"></p>
+  <script>
+    // Get last modified date
+    const date = new Date(document.lastModified);
+    document.getElementById("lastModifiedDate").innerHTML = date;
+  </script> 
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+      "recipeId": 1,
+      "recipeName": "Chocolate Chip Cookies", 
+      "recipeImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/43/2022/03/08/10813-best-chocolate-chip-cookies-mfs-step-7-149.jpg",
+      "recipeDesc": "Classic, ooey gooey chocolate chip cookies!",
+      "recipeSource": "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
+    },
+    {
+      "recipeId": 2,
+      "recipeName": "Pao de Queijo", 
+      "recipeImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/1649973.jpg",
+      "recipeDesc": "Chewy Brazilian Cheese Rolls that are gluten and wheat free.",
+      "recipeSource": "https://www.allrecipes.com/recipe/98554/brazilian-cheese-bread-pao-de-queijo/"
+    },
+    {
+      "recipeId": 3,
+      "recipeName": "Beef Bulgogi", 
+      "recipeImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/43/2022/04/07/100606-beef-bulgogi-2x3-267.jpg",
+      "recipeDesc": "Thinly sliced grilled steak marinated in sweet soy sauce.",
+      "recipeSource": "https://www.allrecipes.com/recipe/100606/beef-bulgogi/"
+    },
+    {
+      "recipeId": 4,
+      "recipeName": "Strawberry Spinach Salad", 
+      "recipeImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/4539063.jpg",
+      "recipeDesc": "Greens with a fruity twist.",
+      "recipeSource": "https://www.allrecipes.com/recipe/14276/strawberry-spinach-salad-i/"
+    },
+    {
+      "recipeId": 5,
+      "recipeName": "", 
+      "recipeImage": "",
+      "recipeDesc": "",
+      "recipeSource": ""
+    }
+]

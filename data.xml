@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<entries>
+	
+	<entry>
+		<recipeName>Chocolate Chip Cookies</recipeName>
+    <recipeImage>https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/43/2022/03/08/10813-best-chocolate-chip-cookies-mfs-step-7-149.jpg</recipeImage>
+		<recipeDesc><![CDATA[Classic, ooey gooey chocolate chip cookies!]]></recipeDesc>
+    <recipeSource>https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/</recipeSource>
+	</entry>
+	
+  <entry>
+		<recipeName>Pao de Queijo</recipeName>
+    <recipeImage>https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/1649973.jpg</recipeImage>
+		<recipeDesc><![CDATA[Chewy Brazilian Cheese Rolls that are gluten and wheat free.]]></recipeDesc>
+    <recipeSource>https://www.allrecipes.com/recipe/98554/brazilian-cheese-bread-pao-de-queijo/</recipeSource>
+	</entry>
+  
+  <entry>
+		<recipeName>Beef Bulgogi</recipeName>
+    <recipeImage>https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/43/2022/04/07/100606-beef-bulgogi-2x3-267.jpg</recipeImage>
+		<recipeDesc><![CDATA[Thinly sliced grilled steak marinated in sweet soy sauce.]]></recipeDesc>
+    <recipeSource>https://www.allrecipes.com/recipe/100606/beef-bulgogi/</recipeSource>
+	</entry>
+  
+   <entry>
+		<recipeName>Strawberry Spinach Salad</recipeName>
+    <recipeImage>https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/4539063.jpg</recipeImage>
+		<recipeDesc><![CDATA[Greens with a fruity twist.]]></recipeDesc>
+    <recipeSource>https://www.allrecipes.com/recipe/14276/strawberry-spinach-salad-i/</recipeSource>
+	</entry>
+	
+</entries>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Recipe Book · IT331</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+  <script type="text/javascript" src="SpryAssets/SpryData.js"></script>
+  <script type="text/javascript" src="SpryAssets/xpath.js"></script>
+  <script type="text/javascript">
+    var myEntries = new Spry.Data.XMLDataSet("data.xml", "entries/entry");
+  </script>
+
+<!-- Added for Project 4 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+  <script>
+    
+    
+    // Uses Raw Ajax to show comments from reviews.txt on page
+    function loadDocument() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("commentarea").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "reviews.txt", true);
+      xhttp.send();
+    } // end loadDocument function
+    
+    
+    // Implement the animation effect on the container
+    $(document).ready(function() {
+      $('#showComments').click(function () {
+          $(document.getElementById("commentarea")).animate(
+            {height: '150px'},
+            1500, function() { }
+          ); // end animate
+      }); // end of click function  
+    }); // end document.ready
+    
+    
+    // Adds the Autocomplete feature from jQuery UI
+    $( function() {
+    var availableTags = [
+      "Classic Pork Ribs and Salad",
+      "Roasted Tomato Stew",
+      "Salmon Steak Dinner",
+      "Charcuterie Board",
+      "Eggs on Toast",
+      "Raspberry Pistachio Macarons"
+    ];
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+  </script>
+  
+  
+<!--  Added for Project 3-->
+  <script>
+    document.addEventListener("mouseover", mOver, false);
+    document.addEventListener("mouseout", mOut, false);
+
+    function mOver(e) {
+      // if the element has an id assigned
+      if (e.target.getAttribute("")) {
+        e.target.innerHTML = "Loser!";
+        e.target.setAttribute("style", "background-color: red");
+      }
+    }
+
+    function mOut(e) {
+      // if the element has an id assigned
+      if (e.target.getAttribute("")) {
+        e.target.innerHTML = "World!";
+        e.target.setAttribute("style", "background-color: white");
+      }
+    }
+    </script>
+</head>
+  
+<body>
+ 
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My RecipeBook</h1>      
+    <p>Have a look around!</p>
+  </div>
+</div>
+
+<!-- Main navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">RecipeBook</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+       <li><a href="allrecipes.html"><span class="glyphicon glyphicon-search"></span> Search Recipes</a></li>
+        <li><a href="feedback.html"><span class="glyphicon glyphicon-pencil"></span> Feedback Form</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title and subtitle container -->
+<div class="container text-center">
+  <h1><b>Recipe Submissions</b></h1>
+  <p>Here you can find all recipes on the site. Additionally, feel free to review comments that have been added on different recipes.</p>
+  
+  <div class="ui-widget" style="margin: 20px 10px">
+    <label for="search">Search for a recipe: </label>
+    <input id="search"><button type="submit">Submit</button>
+  </div>
+  
+  <div id="commentsContainer">
+    <div class="comments" id="commentarea"></div>
+    <button type="button" onclick="loadDocument()" id="showComments">Show Reviews</button>
+  </div>
+</div>
+
+<hr />
+<br />
+
+<!-- Main content container -->
+<div class="container">  
+  
+  <!-- Current forum comments for Project 3 -->
+  <div class="row" >
+    <div class="container">
+    <div spry:region="myEvents">
+      <table id="entries">
+      
+        <tr spry:repeat="myEntries" spry:setrow="myEntries" spry:hover="rowHover">
+          <th style="width: 80%">{recipeName}</th>
+          <th rowspan="2"><img src="recipeImage" style="width:75%"></th>
+          
+            <td>recipeDescription</td>
+        </tr>
+
+      </table>
+      </div>
+    </div>  
+  </div>
+  
+  <br />
+  
+  <!-- Add new entry -->
+  <div class="row">
+    <div class="container">
+      
+    </div>
+  </div>
+  
+</div>
+  
+<br />
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <p>This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+  <p><b>CSS Stylesheet:</b><a href="https://mason.gmu.edu/~vkaibiga/IT331/styles.css" style="color: steelblue"> https://mason.gmu.edu/~vkaibiga/IT331/styles.css</a></p>
+  <p><b>Last Modified Date:</b></p>
+  <p id="lastModifiedDate"></p>
+  <script>
+    // Get last modified date
+    const date = new Date(document.lastModified);
+    document.getElementById("lastModifiedDate").innerHTML = date;
+  </script> 
+</footer>
+
+
+</body>
+</html>

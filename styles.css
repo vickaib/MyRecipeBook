@@ -1,0 +1,98 @@
+body {
+  background-color: #faf7f0;
+}
+
+a: { 
+  color: #eda024;
+}
+
+a:link {
+  color: #eda024;
+}
+
+a:visted {
+  color: #ad823d;
+}
+
+li {
+  list-style-type: "‣";
+}
+
+.panel-footer {
+  background-color: #ffffff;
+}
+.panel-body {
+  background-color: #f0e7cc;
+}
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+  background-color: #665133;
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+  margin-bottom: 0;
+  color: white;
+  text-shadow: -2px 4px #000000;
+  background-image: url("https://cdn.pixabay.com/photo/2018/12/22/16/36/recipe-3889913_1280.jpg");
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+input[type=submit] {
+  background-color: #ad823d;
+  color: white;
+  border-radius: 10px;
+}
+input[type=reset] {
+  background-color: #ad823d;
+  color: white;
+  border-radius: 10px;
+}
+input[type=button] {
+  background-color: #ad823d;
+  color: white;
+  border-radius: 10px;
+}
+
+th {
+  padding: 4px;
+}
+
+button {
+  background-color: #ad823d;
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
+}
+.button:hover {
+  background-color: #d6a867;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+    
+.featured td { 
+    text-align:center;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #d6a867;
+  padding: 25px;
+}
+
+.fa {
+  padding: 20px;
+  background-color: #665133; 
+}
+
+.comments {
+  padding: 10px 40px;
+  margin: 5px;
+  background-color: #e6ceac;
+}
