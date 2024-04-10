@@ -5,5 +5,5 @@ Created a mockup of a recipe log of recipes that I enjoy, allowing users to sear
 
 ## Challenges
 - Styling of the page is outdated
-- Many images no longer load or follow inactive links
+- Many recipes followed inactive links and needed to be reupdated with new ones
 - Use the spoonacular API to retrieve recipe names and images to display on page rather than just storing in data.json
